@@ -1,0 +1,144 @@
+========================================================
+                 AYUDA - DOMINO
+========================================================
+
+Bienvenido al Domino. Juegas contra la CPU en una
+partida uno contra uno con las 28 fichas del domino
+(del 0-0 al 6-6).
+
+
+--------------------------------------------------------
+ 1. OBJETIVO DEL JUEGO
+--------------------------------------------------------
+
+Quedarte sin fichas antes que la CPU, o bien, si la
+partida se cierra, ser quien menos puntos sume con las
+fichas que le queden en la mano.
+
+
+--------------------------------------------------------
+ 2. LOS MENUS
+--------------------------------------------------------
+
+Menu "Juego":
+  - Nuevo : Reparte las fichas y comienza una partida.
+            (Se desactiva mientras juegas y se vuelve a
+            activar al terminar la partida.)
+  - Salir : Cierra la aplicacion.
+
+Menu "Ayuda":
+  - Ayuda      : Muestra esta ventana.
+  - Acerca de  : Informacion sobre la aplicacion.
+
+
+--------------------------------------------------------
+ 3. LA PANTALLA DE JUEGO
+--------------------------------------------------------
+
+  - A la DERECHA  : tus fichas (boca arriba, visibles).
+  - A la IZQUIERDA: las fichas de la CPU (boca abajo,
+                    ocultas).
+  - ABAJO         : el MAZO, del que se roba (oculto).
+  - EN EL CENTRO  : el TABLERO, donde se va formando la
+                    cadena de fichas.
+
+Arriba se muestran los puntos de cada jugador y, en el
+centro, un mensaje que indica lo que va ocurriendo
+(quien coloca, quien roba y quien pasa).
+
+
+--------------------------------------------------------
+ 4. EL REPARTO Y QUIEN EMPIEZA
+--------------------------------------------------------
+
+Al pulsar "Nuevo":
+  - Se reparten 7 fichas para ti y 7 para la CPU.
+  - Las fichas restantes forman el mazo.
+
+Empieza quien tenga la ficha de mayor prioridad:
+  - Los DOBLES (0-0, 1-1, ... 6-6) tienen prioridad
+    sobre cualquier otra ficha; entre ellos gana el
+    doble mas alto.
+  - Si nadie tiene doble, empieza quien tenga la ficha
+    con mayor suma de sus dos valores.
+
+La ficha de salida se coloca automaticamente en el
+tablero y el turno pasa al contrario.
+
+
+--------------------------------------------------------
+ 5. COMO SE COLOCAN LAS FICHAS
+--------------------------------------------------------
+
+El tablero es una cadena con dos extremos libres. Una
+ficha se puede colocar si uno de sus dos numeros
+coincide con el numero de alguno de los extremos.
+
+En TU turno:
+  - Pulsa con el raton la ficha que quieras colocar.
+  - Si la ficha solo encaja por un extremo, se coloca
+    ahi directamente.
+  - Si encaja por los DOS extremos y estos son
+    distintos, se te pedira que elijas el lado con los
+    botones "Izquierda" / "Derecha" (o "Cancelar" para
+    elegir otra ficha).
+  - Si pulsas una ficha que no encaja, se te avisara
+    para que elijas otra.
+
+
+--------------------------------------------------------
+ 6. ROBAR DEL MAZO Y PASAR TURNO
+--------------------------------------------------------
+
+Si al llegar tu turno no tienes ninguna ficha que
+encaje:
+  - Robaras automaticamente fichas del mazo, una a una,
+    hasta conseguir una que puedas colocar.
+  - Si el mazo se agota y sigues sin poder jugar, pasas
+    el turno.
+
+La CPU sigue las mismas reglas: intenta colocar su
+ficha de mayor valor; si no puede, roba; y si no hay
+mazo, pasa.
+
+Cada accion (colocar, robar o pasar) se muestra en el
+mensaje central con una breve pausa para que puedas
+seguir lo que ocurre.
+
+
+--------------------------------------------------------
+ 7. FIN DE LA PARTIDA
+--------------------------------------------------------
+
+La partida termina de una de estas dos formas:
+
+  a) Alguien se queda SIN FICHAS: gana esa persona.
+     Suma 100 puntos mas los puntos de las fichas que
+     le quedan al perdedor.
+
+  b) PARTIDA CERRADA: ninguno de los dos puede jugar y
+     el mazo esta vacio (ambos pasan seguidos). En ese
+     caso gana quien menos puntos sume con las fichas
+     de su mano.
+
+El valor en puntos de una ficha es la suma de sus dos
+numeros (por ejemplo, la 5-3 vale 8 puntos).
+
+Al terminar, se descubren las fichas ocultas de la CPU
+y del mazo, y se muestra el resultado y la puntuacion.
+
+
+--------------------------------------------------------
+ 8. CONSEJOS
+--------------------------------------------------------
+
+  - Intenta soltar pronto las fichas de mayor valor:
+    si la partida se cierra, sumaran menos en tu contra.
+  - Vigila que numeros quedan libres en los extremos
+    para no bloquearte.
+  - Guardar algun doble puede ayudarte a encadenar
+    jugadas mas adelante.
+
+========================================================
+             Que disfrutes de la partida!
+========================================================
